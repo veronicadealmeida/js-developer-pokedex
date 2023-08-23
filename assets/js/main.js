@@ -35,28 +35,12 @@ function loadPokemonItens(offset, limit) {
   });
 }
 
-loadPokemonItens(offset, limit);
-
-loadMoreButton.addEventListener('click', () => {
-  offset += limit;
-  const qtdRecordsWithNexPage = offset + limit;
-
-  if (qtdRecordsWithNexPage >= maxRecords) {
-    const newLimit = maxRecords - offset;
-    loadPokemonItens(offset, newLimit);
-
-    loadMoreButton.parentElement.removeChild(loadMoreButton);
-  } else {
-    loadPokemonItens(offset, limit);
-  }
-});
-
 function requestDetail(pokemonNumber) {
   pokeApi.getPokemonDetailForModal(pokemonNumber).then((pokemonDetail = []) => {
     detailsModal.innerHTML = `
-    <div id="my-modal" class="detail" onblur="fechar()">
+    <div id="my-modal" class="detail " onblur="fechar()">
         <div class="top ${pokemonDetail.type}">
-            <div class="headDetail" >
+            <div class="headDetail " >
                 
                 
                 <div ${pokemonDetail.type}">
@@ -132,13 +116,6 @@ loadMoreButton.addEventListener('click', () => {
     loadPokemonItens(offset, limit);
   }
 });
-
-// window.addEventListener('mouseup', function (event) {
-//   var pol = document.getElementById('my-modal');
-//   if (event.target != pol && event.target.parentNode != pol) {
-//     pol.style.display = 'none';
-//   }
-// });
 
 document.addEventListener('click', function (e) {
   //verifica se o alvo do seu clique está sendo o modal ou um botão

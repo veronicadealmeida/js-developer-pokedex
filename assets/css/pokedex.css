@@ -164,7 +164,6 @@
 }
 
 .headDetail {
-  background-color: #77c850;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -262,43 +261,37 @@
 }
 
 @media screen and (min-width: 475px) {
-    .pokemonsModal {
-        width: 95%;
-
-    }
+  .pokemonsModal {
+    width: 95%;
+  }
 }
 
 @media screen and (min-width: 517px) {
-    .pokemonsModal {
-        width: 85%;
-
-    }
+  .pokemonsModal {
+    width: 85%;
+  }
 }
 
 @media screen and (min-width: 557px) {
-    .pokemonsModal {
-        width: 75%;
-
-    }
+  .pokemonsModal {
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 606px) {
-    .pokemonsModal {
-        width: 70%;
-
-    }
+  .pokemonsModal {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 657px) {
-    .pokemonsModal {
-        width: 65%;
-
-    }
+  .pokemonsModal {
+    width: 65%;
+  }
 }
 
 @media screen and (min-width: 725px) {
-    .pokemonsModal {
-        width: auto;
-
-    }
+  .pokemonsModal {
+    width: auto;
+  }
 }
