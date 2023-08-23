@@ -233,13 +233,13 @@
 .about ul li {
   list-style: none;
   color: gray;
-  font-size: 0.625rem;
+  font-size: 1rem;
 }
 
 .about-value {
   list-style: none;
   color: darkgray;
-  font-size: 0.625rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 380px) {
